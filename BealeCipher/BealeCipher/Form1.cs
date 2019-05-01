@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace BealeCipher
 {
@@ -19,7 +20,29 @@ namespace BealeCipher
 
         private void BtnEncrypt_Click(object sender, EventArgs e)
         {
+            StreamReader reader = new StreamReader(txtKeyPath.Text);
+            string key = reader.ReadToEnd();
+            BealeCipher objBeale = new BealeCipher(key, txtPlainText.Text);
+            objBeale.encrypt();
+            txtCipherText.Text = objBeale.getCipherText();
+        }
 
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                txtKeyPath.Text = opf.FileName;
+            }
+        }
+
+        private void btnDecrypt_Click(object sender, EventArgs e)
+        {
+            StreamReader reader = new StreamReader(txtKeyPath.Text);
+            string key = reader.ReadToEnd();
+            BealeCipher objBeale = new BealeCipher(key);
+            txtDecryptedText.Text = objBeale.decrypt(txtCipherText.Text);
         }
     }
+    
 }
