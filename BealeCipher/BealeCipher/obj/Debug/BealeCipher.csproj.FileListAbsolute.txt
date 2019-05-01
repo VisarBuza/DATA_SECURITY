@@ -1,0 +1,10 @@
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\bin\Debug\BealeCipher.exe.config
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\bin\Debug\BealeCipher.exe
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\bin\Debug\BealeCipher.pdb
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.Form1.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.Properties.Resources.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.exe
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti\DATA_SECURITY_BealeCipher\BealeCipher\BealeCipher\obj\Debug\BealeCipher.pdb

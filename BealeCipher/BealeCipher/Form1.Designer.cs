@@ -42,10 +42,9 @@
             // 
             // btnEncrypt
             // 
-            this.btnEncrypt.Location = new System.Drawing.Point(860, 95);
-            this.btnEncrypt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEncrypt.Location = new System.Drawing.Point(645, 77);
             this.btnEncrypt.Name = "btnEncrypt";
-            this.btnEncrypt.Size = new System.Drawing.Size(109, 46);
+            this.btnEncrypt.Size = new System.Drawing.Size(82, 37);
             this.btnEncrypt.TabIndex = 0;
             this.btnEncrypt.Text = "Encrypt";
             this.btnEncrypt.UseVisualStyleBackColor = true;
@@ -53,88 +52,91 @@
             // 
             // btnDecrypt
             // 
-            this.btnDecrypt.Location = new System.Drawing.Point(860, 368);
-            this.btnDecrypt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDecrypt.Location = new System.Drawing.Point(645, 299);
+            this.btnDecrypt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDecrypt.Name = "btnDecrypt";
-            this.btnDecrypt.Size = new System.Drawing.Size(109, 46);
+            this.btnDecrypt.Size = new System.Drawing.Size(82, 37);
             this.btnDecrypt.TabIndex = 1;
             this.btnDecrypt.Text = "Decrypt";
             this.btnDecrypt.UseVisualStyleBackColor = true;
+            this.btnDecrypt.Click += new System.EventHandler(this.BtnDecrypt_Click);
             // 
             // txtPlainText
             // 
-            this.txtPlainText.Location = new System.Drawing.Point(53, 48);
-            this.txtPlainText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPlainText.Location = new System.Drawing.Point(40, 39);
+            this.txtPlainText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPlainText.Name = "txtPlainText";
-            this.txtPlainText.Size = new System.Drawing.Size(915, 22);
+            this.txtPlainText.Size = new System.Drawing.Size(687, 20);
             this.txtPlainText.TabIndex = 2;
             // 
             // txtCipherText
             // 
-            this.txtCipherText.Location = new System.Drawing.Point(53, 318);
-            this.txtCipherText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCipherText.Location = new System.Drawing.Point(40, 258);
+            this.txtCipherText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCipherText.Name = "txtCipherText";
-            this.txtCipherText.Size = new System.Drawing.Size(913, 22);
+            this.txtCipherText.Size = new System.Drawing.Size(686, 20);
             this.txtCipherText.TabIndex = 3;
             // 
             // txtDecryptedText
             // 
-            this.txtDecryptedText.Location = new System.Drawing.Point(53, 447);
-            this.txtDecryptedText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDecryptedText.Location = new System.Drawing.Point(40, 363);
+            this.txtDecryptedText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDecryptedText.Name = "txtDecryptedText";
-            this.txtDecryptedText.Size = new System.Drawing.Size(915, 22);
+            this.txtDecryptedText.Size = new System.Drawing.Size(687, 20);
             this.txtDecryptedText.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 30);
+            this.label1.Location = new System.Drawing.Point(38, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 17);
+            this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Plain Text";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 286);
+            this.label2.Location = new System.Drawing.Point(38, 232);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 17);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Cipher Text";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 409);
+            this.label3.Location = new System.Drawing.Point(37, 332);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
+            this.label3.Size = new System.Drawing.Size(80, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Decrypted Text";
             // 
             // txtKeyPath
             // 
-            this.txtKeyPath.Location = new System.Drawing.Point(55, 198);
-            this.txtKeyPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKeyPath.Location = new System.Drawing.Point(41, 161);
             this.txtKeyPath.Name = "txtKeyPath";
-            this.txtKeyPath.Size = new System.Drawing.Size(792, 22);
+            this.txtKeyPath.Size = new System.Drawing.Size(595, 20);
             this.txtKeyPath.TabIndex = 8;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(868, 194);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowse.Location = new System.Drawing.Point(651, 158);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(100, 28);
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 9;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.BtnBrowse_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtKeyPath);
             this.Controls.Add(this.label3);
@@ -145,7 +147,6 @@
             this.Controls.Add(this.txtPlainText);
             this.Controls.Add(this.btnDecrypt);
             this.Controls.Add(this.btnEncrypt);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

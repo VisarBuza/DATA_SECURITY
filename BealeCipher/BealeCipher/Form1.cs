@@ -27,7 +27,7 @@ namespace BealeCipher
             txtCipherText.Text = objBeale.getCipherText();
         }
 
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private void BtnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
             if (opf.ShowDialog() == DialogResult.OK)
@@ -36,7 +36,7 @@ namespace BealeCipher
             }
         }
 
-        private void btnDecrypt_Click(object sender, EventArgs e)
+        private void BtnDecrypt_Click(object sender, EventArgs e)
         {
             StreamReader reader = new StreamReader(txtKeyPath.Text);
             string key = reader.ReadToEnd();
