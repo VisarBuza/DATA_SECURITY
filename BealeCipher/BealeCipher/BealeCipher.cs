@@ -24,18 +24,18 @@ namespace BealeCipher
 
         public void encrypt()
         {
-            string[] wordArray = key.Split(' ');
+            string[] keyArray = key.Split(' ');
             string[] plainTextArray = plainText.Split(' ');
             for (int i = 0; i < plainTextArray.Length; i++)
             {
                 string word = plainTextArray[i];
-                int index = Array.IndexOf(wordArray, word);
-                if (index < 0)
+                int indexOfWord = Array.IndexOf(keyArray, word);
+                if (indexOfWord < 0)
                 {
                     throw new Exception();
                 }
 
-                cipherText += index + 1;
+                cipherText += indexOfWord + 1;
                 cipherText += " ";
             }
 
@@ -44,14 +44,14 @@ namespace BealeCipher
         }
         public string decrypt(string cipherText)
         {
-            int[] indexes = cipherText
+            int[] indexOfWord = cipherText
                             .Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries)
                             .Select(n => int.Parse(n) - 1)
                             .ToArray();
-            string[] wordArray = key.Split(' ');
-            foreach (int index in indexes)
+            string[] keyArray = key.Split(' ');
+            foreach (int index in indexOfWord)
             {
-                plainText += wordArray[index] + " ";
+                plainText += keyArray[index] + " ";
             }
 
             return plainText.TrimEnd();
