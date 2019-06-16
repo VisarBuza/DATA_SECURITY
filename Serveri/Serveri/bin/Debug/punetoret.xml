@@ -1,0 +1,38 @@
+<punetoret>
+  <punetori id="1">
+    <name>rrezarta</name>
+    <surname>saaluka</surname>
+    <username>rrezi</username>
+    <password>
+      <salt>992840</salt>
+      <saltedHash>ZJo2sZ1K0kEAeA/pk4l1aVrjNeY=</saltedHash>
+    </password>
+    <pozita>pelena ndrruese </pozita>
+    <paga>2000</paga>
+    <departamenti>baby factory</departamenti>
+  </punetori>
+  <punetori id="2">
+    <name>puhiza</name>
+    <surname>doci</surname>
+    <username>puhi</username>
+    <password>
+      <salt>543601</salt>
+      <saltedHash>C/2Szyp/yBjjsQCwUE0ZPgxiyAY=</saltedHash>
+    </password>
+    <pozita>pelena ndrruese </pozita>
+    <paga>2000</paga>
+    <departamenti>baby factory</departamenti>
+  </punetori>
+  <punetori id="3">
+    <name>visar</name>
+    <surname>buza</surname>
+    <username>visi</username>
+    <password>
+      <salt>113783</salt>
+      <saltedHash>pZhWTMAP59L6jXCaqmmD4N7Dydc=</saltedHash>
+    </password>
+    <pozita>pelena ndrruese </pozita>
+    <paga>2000</paga>
+    <departamenti>baby factory</departamenti>
+  </punetori>
+</punetoret>
