@@ -29,7 +29,7 @@ namespace Serveri
                 textBox5.Text = info.Element("paga").Value.ToString();
                 textBox6.Text = info.Element("pozita").Value.ToString();
                 textBox6.Text = info.Element("departamenti").Value.ToString();
-                Form1.
+                
             }
             else
             {

@@ -8,3 +8,13 @@ C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti
 C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti2\DataSecurity_p2\Serveri\Serveri\bin\Debug\Serveri.pdb
 C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti2\DataSecurity_p2\Serveri\Serveri\obj\Debug\Serveri.exe
 C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekti2\DataSecurity_p2\Serveri\Serveri\obj\Debug\Serveri.pdb
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.Form1.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.Properties.Resources.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.exe
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\obj\Debug\Serveri.pdb
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\bin\Debug\Serveri.exe.config
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\bin\Debug\Serveri.exe
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\bin\Debug\Serveri.pdb
