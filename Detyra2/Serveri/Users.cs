@@ -11,7 +11,7 @@ using System.IO;
 
 namespace Serveri
 {
-    public class Users
+    class Users
     {  
         private static string generateSalt()
         {

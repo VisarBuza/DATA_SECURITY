@@ -18,13 +18,3 @@ C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projekte
 C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\bin\Debug\Serveri.exe.config
 C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\bin\Debug\Serveri.exe
 C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Projektet\DATA_SECURITY\Serveri\Serveri\bin\Debug\Serveri.pdb
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\bin\Debug\Serveri.exe.config
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\bin\Debug\Serveri.exe
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\bin\Debug\Serveri.pdb
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.csprojAssemblyReference.cache
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.Form1.resources
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.Properties.Resources.resources
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.csproj.GenerateResource.cache
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.exe
-C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Serveri\obj\Debug\Serveri.pdb
