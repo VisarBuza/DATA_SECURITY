@@ -66,6 +66,7 @@ namespace Serveri
                         Invoke((MethodInvoker)delegate
                         {
                             listBox1.Items.Add(accept.RemoteEndPoint.ToString());
+                            listBox1.Items.Add(Encoding.Default.GetString(buffer));
                         });
                     }
                     catch

@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
 
 namespace Klienti
 {
     public partial class Register : Form
     {
-        public Register()
+        Socket clientSocket;
+        public Register(Socket socket)
         {
             InitializeComponent();
+            clientSocket = socket;
         }
 
         
@@ -24,6 +28,10 @@ namespace Klienti
             
         }
 
-        
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            byte[] data = Encoding.Default.GetBytes(textBox1.Text);
+            clientSocket.Send(data, 0, data.Length, 0);
+        }
     }
 }

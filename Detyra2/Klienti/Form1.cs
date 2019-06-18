@@ -27,17 +27,17 @@ namespace Klienti
         {
             InitializeComponent();
             clientSocket = socket();
+            connect();
         }
 
         private void Label4_Click(object sender, EventArgs e)
         {
-            new Register().Show();
+            new Register(clientSocket).Show();
             this.Hide();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            connect();
             send();
         }
 
