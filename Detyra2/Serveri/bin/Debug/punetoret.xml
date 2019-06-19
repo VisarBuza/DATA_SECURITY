@@ -1,38 +1,62 @@
 <punetoret>
   <punetori id="1">
-    <name>rrezarta</name>
-    <surname>saaluka</surname>
+    <name>Rrezarta</name>
+    <surname>Sallauka</surname>
     <username>rrezi</username>
     <password>
-      <salt>992840</salt>
-      <saltedHash>ZJo2sZ1K0kEAeA/pk4l1aVrjNeY=</saltedHash>
+      <salt>959214</salt>
+      <saltedHash>7JqU6i/af8jNT0k7/8aIq4C/7tI=</saltedHash>
     </password>
-    <pozita>pelena ndrruese </pozita>
-    <paga>2000</paga>
-    <departamenti>baby factory</departamenti>
+    <pozita>DevOps</pozita>
+    <paga>1200</paga>
+    <departamenti>Kompjuterik</departamenti>
   </punetori>
   <punetori id="2">
-    <name>puhiza</name>
-    <surname>doci</surname>
+    <name>Puhiza</name>
+    <surname>Doqi</surname>
     <username>puhi</username>
     <password>
-      <salt>543601</salt>
-      <saltedHash>C/2Szyp/yBjjsQCwUE0ZPgxiyAY=</saltedHash>
+      <salt>737964</salt>
+      <saltedHash>O1pajBG0l8k20YJRblCmtWB38iE=</saltedHash>
     </password>
-    <pozita>pelena ndrruese </pozita>
-    <paga>2000</paga>
-    <departamenti>baby factory</departamenti>
+    <pozita>Admin</pozita>
+    <paga>1200</paga>
+    <departamenti>Kompjuterik</departamenti>
   </punetori>
   <punetori id="3">
-    <name>visar</name>
-    <surname>buza</surname>
+    <name>Visar</name>
+    <surname>Buza</surname>
     <username>visi</username>
     <password>
-      <salt>113783</salt>
-      <saltedHash>pZhWTMAP59L6jXCaqmmD4N7Dydc=</saltedHash>
+      <salt>161614</salt>
+      <saltedHash>FkIdPwOu7BSzf6v5XKocEklT3Tw=</saltedHash>
     </password>
-    <pozita>pelena ndrruese </pozita>
-    <paga>2000</paga>
-    <departamenti>baby factory</departamenti>
+    <pozita>DevOps</pozita>
+    <paga>1100</paga>
+    <departamenti>Kompjuterik</departamenti>
+  </punetori>
+  <punetori id="4">
+    <name>Vigan</name>
+    <surname>Dika</surname>
+    <username>vigandika</username>
+    <password>
+      <salt>530918</salt>
+      <saltedHash>YqnRGkVZJlhip04PRKkJ8w5i6kQ=</saltedHash>
+    </password>
+    <pozita>Admin</pozita>
+    <paga>800</paga>
+    <departamenti>Elektro</departamenti>
+  </punetori>
+  <punetori id="5">
+    <name>Fjolla</name>
+    <surname>Zejnullahu</surname>
+    <username>fyllka</username>
+    <password>
+      <salt>689338</salt>
+      <saltedHash>y3ZDF4FFBgzcbxpiV6ajcZdFLJg=</saltedHash>
+    </password>
+    <pozita>Avokate</pozita>
+    <paga>1200</paga>
+    <departamenti>Juridik</departamenti>
   </punetori>
 </punetoret>

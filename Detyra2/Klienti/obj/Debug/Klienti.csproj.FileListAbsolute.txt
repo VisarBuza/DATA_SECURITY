@@ -9,14 +9,15 @@ C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\De
 C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.exe
 C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.pdb
 C:\Users\Admin\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.Register.resources
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\bin\Debug\Klienti.exe.config
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\bin\Debug\Klienti.exe
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\bin\Debug\Klienti.pdb
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.csprojAssemblyReference.cache
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.Form1.resources
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.Properties.Resources.resources
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.Register.resources
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.csproj.GenerateResource.cache
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.csproj.CoreCompileInputs.cache
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.exe
-C:\Users\User\Documents\GitHub\DATA_SECURITY_BealeCipher\Detyra2\Klienti\obj\Debug\Klienti.pdb
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\bin\Debug\Klienti.exe.config
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\bin\Debug\Klienti.exe
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\bin\Debug\Klienti.pdb
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.Form1.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.Properties.Resources.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.Register.resources
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.exe
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.pdb
+C:\Users\lenovo\Desktop\Fakultet\Viti 2\Semestri 4\Siguria e te Dhenave\Test\Klienti\obj\Debug\Klienti.Info.resources
