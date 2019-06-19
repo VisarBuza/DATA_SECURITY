@@ -97,6 +97,7 @@
             this.txtPaga.Location = new System.Drawing.Point(74, 200);
             this.txtPaga.Margin = new System.Windows.Forms.Padding(2);
             this.txtPaga.Name = "txtPaga";
+            this.txtPaga.ReadOnly = true;
             this.txtPaga.Size = new System.Drawing.Size(99, 21);
             this.txtPaga.TabIndex = 23;
             // 
@@ -106,6 +107,7 @@
             this.txtPozita.Location = new System.Drawing.Point(275, 145);
             this.txtPozita.Margin = new System.Windows.Forms.Padding(2);
             this.txtPozita.Name = "txtPozita";
+            this.txtPozita.ReadOnly = true;
             this.txtPozita.Size = new System.Drawing.Size(99, 21);
             this.txtPozita.TabIndex = 22;
             // 
@@ -115,6 +117,7 @@
             this.txtDepartamenti.Location = new System.Drawing.Point(74, 145);
             this.txtDepartamenti.Margin = new System.Windows.Forms.Padding(2);
             this.txtDepartamenti.Name = "txtDepartamenti";
+            this.txtDepartamenti.ReadOnly = true;
             this.txtDepartamenti.Size = new System.Drawing.Size(99, 21);
             this.txtDepartamenti.TabIndex = 21;
             // 
@@ -124,6 +127,7 @@
             this.txtSurname.Location = new System.Drawing.Point(275, 83);
             this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.txtSurname.Name = "txtSurname";
+            this.txtSurname.ReadOnly = true;
             this.txtSurname.Size = new System.Drawing.Size(99, 21);
             this.txtSurname.TabIndex = 18;
             // 
@@ -133,6 +137,7 @@
             this.txtName.Location = new System.Drawing.Point(74, 83);
             this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(99, 21);
             this.txtName.TabIndex = 17;
             // 

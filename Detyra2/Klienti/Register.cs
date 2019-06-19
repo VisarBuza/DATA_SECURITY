@@ -12,19 +12,22 @@ using System.Threading;
 using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Klienti
 {
     public partial class Register : Form
     {
+        X509Certificate2 certifikata;
+        RSACryptoServiceProvider objRsa = new RSACryptoServiceProvider();
         DESCryptoServiceProvider objDes = new DESCryptoServiceProvider();
         Socket clientSocket;
 
-        public Register(Socket socket)
+        public Register(Socket socket,X509Certificate2 certificate2)
         {
             InitializeComponent();
             clientSocket = socket;
-            
+            certifikata=certificate2;
         }
 
         
@@ -69,7 +72,12 @@ namespace Klienti
             string IV = Encoding.Default.GetString(objDes.IV);
 
 
+            objRsa = (RSACryptoServiceProvider)certifikata.PublicKey.Key;
+            byte[] byteKey = objRsa.Encrypt(objDes.Key, true);
+            string encryptedKey = Convert.ToBase64String(byteKey);
+
             byte[] bytePlaintexti = Encoding.UTF8.GetBytes(plaintext);
+
 
             MemoryStream ms = new MemoryStream();
             CryptoStream cs = new CryptoStream(ms, objDes.CreateEncryptor(), CryptoStreamMode.Write);
@@ -78,7 +86,7 @@ namespace Klienti
 
             byte[] byteCiphertexti = ms.ToArray();
 
-            return IV + "." + key + "." + Convert.ToBase64String(byteCiphertexti);
+            return IV + "." + encryptedKey + "." + Convert.ToBase64String(byteCiphertexti);
 
         }
     }

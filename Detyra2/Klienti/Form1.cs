@@ -12,6 +12,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace Klienti
@@ -21,6 +22,7 @@ namespace Klienti
         Socket clientSocket;
         RSACryptoServiceProvider objRsa = new RSACryptoServiceProvider();
         DESCryptoServiceProvider objDes = new DESCryptoServiceProvider();
+        X509Certificate2 certifikata = new X509Certificate2();
         string key;
         string IV;
         
@@ -39,7 +41,7 @@ namespace Klienti
 
         private void Label4_Click(object sender, EventArgs e)
         {
-            new Register(clientSocket).Show();
+            new Register(clientSocket,certifikata).Show();
             this.Hide();
         }
 
@@ -82,14 +84,14 @@ namespace Klienti
                         throw new SocketException();
                     }
                     Array.Resize(ref buffer, rec);
-
+                       
 
                     Invoke((MethodInvoker)delegate
                     {
                         string data = Encoding.Default.GetString(buffer);
                         data = decrypt(data);
                         string[] filteredData = data.Split('.');
-                        new Info(filteredData[0],filteredData[1],filteredData[2],filteredData[3],filteredData[4]).Show();
+                        new Info(filteredData[0], filteredData[1], filteredData[2], filteredData[3], filteredData[4]).Show();
                     });
                 }
                 catch
@@ -122,6 +124,9 @@ namespace Klienti
             key = Encoding.Default.GetString(objDes.Key);
             IV = Encoding.Default.GetString(objDes.IV);
 
+            objRsa = (RSACryptoServiceProvider)certifikata.PublicKey.Key;
+            byte[] byteKey = objRsa.Encrypt(objDes.Key, true);
+            string encryptedKey = Convert.ToBase64String(byteKey);
 
             byte[] bytePlaintexti = Encoding.UTF8.GetBytes(plaintext);
 
@@ -130,9 +135,11 @@ namespace Klienti
             cs.Write(bytePlaintexti, 0, bytePlaintexti.Length);
             cs.Close();
 
+           
+
             byte[] byteCiphertexti = ms.ToArray();
 
-            return IV+"."+key+"."+Convert.ToBase64String(byteCiphertexti);
+            return IV+"."+encryptedKey+"."+Convert.ToBase64String(byteCiphertexti);
 
         }
 
@@ -153,6 +160,33 @@ namespace Klienti
 
 
             return Encoding.UTF8.GetString(byteTextiDekriptuar);
+        }
+
+        private void CertifikatatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            X509Store certificateStore = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+            certificateStore.Open(OpenFlags.OpenExistingOnly);
+
+            try
+            {
+                X509Certificate2Collection certCollection = X509Certificate2UI.SelectFromCollection(certificateStore.Certificates,
+                    "Zgjedh certifikaten", "Zgjedh certifikaten", X509SelectionFlag.SingleSelection);
+
+                certifikata = certCollection[0];
+                if (certifikata.HasPrivateKey)
+                {
+                    MessageBox.Show("Keni perzgjedhur certifikaten e " +
+                        certifikata.Subject);
+                }
+                else
+                {
+                    MessageBox.Show("Certifikata nuk permbane celes privat!");
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }

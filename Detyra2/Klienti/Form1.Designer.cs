@@ -35,6 +35,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.certifikatatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -113,6 +117,31 @@
             this.label4.Text = "Don\'t have an account ? Sign up now !";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(277, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.certifikatatToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // certifikatatToolStripMenuItem
+            // 
+            this.certifikatatToolStripMenuItem.Name = "certifikatatToolStripMenuItem";
+            this.certifikatatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.certifikatatToolStripMenuItem.Text = "Certifikatat";
+            this.certifikatatToolStripMenuItem.Click += new System.EventHandler(this.CertifikatatToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,9 +155,13 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +176,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem certifikatatToolStripMenuItem;
     }
 }
 

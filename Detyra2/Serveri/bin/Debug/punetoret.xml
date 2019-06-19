@@ -59,4 +59,16 @@
     <paga>1200</paga>
     <departamenti>Juridik</departamenti>
   </punetori>
+  <punetori id="6">
+    <name>Vitore</name>
+    <surname>Buza</surname>
+    <username>viki</username>
+    <password>
+      <salt>389603</salt>
+      <saltedHash>4lFTQiG/imM5TU7F5zyiq2+jR3U=</saltedHash>
+    </password>
+    <pozita>Analiste</pozita>
+    <paga>2000</paga>
+    <departamenti>Ekonomi</departamenti>
+  </punetori>
 </punetoret>
