@@ -138,8 +138,8 @@ namespace Serveri
                                                      where punetori.Element("username").Value.ToString().Equals(username)
                                                      select punetori.Element("password");
 
-               
-                string saltPassword = password + passwordInfo.First().Element("salt").Value;
+
+                string saltPassword = password + getSaltByUsername(username);
                 byte[] byteSaltPassword = Encoding.UTF8.GetBytes(saltPassword);
 
                 SHA1CryptoServiceProvider objHash = new SHA1CryptoServiceProvider();

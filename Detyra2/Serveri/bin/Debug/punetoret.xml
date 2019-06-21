@@ -71,4 +71,64 @@
     <paga>2000</paga>
     <departamenti>Ekonomi</departamenti>
   </punetori>
+  <punetori id="7">
+    <name>Vlora</name>
+    <surname>Spahija</surname>
+    <username>vspahija</username>
+    <password>
+      <salt>798477</salt>
+      <saltedHash>yFr0YbaQdAB+dK06diqAPSYQUHk=</saltedHash>
+    </password>
+    <pozita>Mjeke</pozita>
+    <paga>800</paga>
+    <departamenti>Mjekesi</departamenti>
+  </punetori>
+  <punetori id="8">
+    <name>Edi</name>
+    <surname>Hoxha</surname>
+    <username>edihoxha</username>
+    <password>
+      <salt>953996</salt>
+      <saltedHash>u0cJ00XNJKIZ/0FuK/AA2Wbgjbs=</saltedHash>
+    </password>
+    <pozita>Trajner</pozita>
+    <paga>700</paga>
+    <departamenti>Sportit</departamenti>
+  </punetori>
+  <punetori id="9">
+    <name>Elona</name>
+    <surname>Domi</surname>
+    <username>elonadomi</username>
+    <password>
+      <salt>811956</salt>
+      <saltedHash>BJ+A+IRYwIT459uubPAbOdVkohc=</saltedHash>
+    </password>
+    <pozita>Perkthyese</pozita>
+    <paga>1200</paga>
+    <departamenti>Gjuhes</departamenti>
+  </punetori>
+  <punetori id="10">
+    <name>Art</name>
+    <surname>Mullahasani</surname>
+    <username>artm</username>
+    <password>
+      <salt>956242</salt>
+      <saltedHash>Z3AGzdKpa03dF6LTcdJundDpA2E=</saltedHash>
+    </password>
+    <pozita>Arkitekt</pozita>
+    <paga>1000</paga>
+    <departamenti>Arkitektur</departamenti>
+  </punetori>
+  <punetori id="11">
+    <name>Era</name>
+    <surname>Mullaademi</surname>
+    <username>era</username>
+    <password>
+      <salt>897180</salt>
+      <saltedHash>iqB2mYBmql03QpBpx7DbTslpehs=</saltedHash>
+    </password>
+    <pozita>Menaxhere</pozita>
+    <paga>1200</paga>
+    <departamenti>Shoqror</departamenti>
+  </punetori>
 </punetoret>

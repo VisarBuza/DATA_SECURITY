@@ -30,6 +30,7 @@ namespace Serveri
         string iv;
         Socket serverSocket;
         Socket accept;
+       
 
         Socket socket()
         {
@@ -54,7 +55,7 @@ namespace Serveri
             serverSocket = socket();
             serverSocket.Bind(new IPEndPoint(0, 3));
             serverSocket.Listen(0);
-           
+            MessageBox.Show("Serveri filloi te degjoj ne portin 3");
 
             new Thread(() =>
             {
@@ -83,6 +84,7 @@ namespace Serveri
                         string[] list = data.Split('.');
 
                         string controlFlow = list[list.Length - 1].Substring(0, 1);
+
                         if (controlFlow == "1")
                         {
                             if (Users.isUser(list[0], list[1])) 
@@ -93,15 +95,32 @@ namespace Serveri
                                 string thisDepartament = user.Element("departamenti").Value.ToString();
                                 string thisPozita = user.Element("pozita").Value.ToString();
                                 string thisPaga = user.Element("paga").Value.ToString();
-                                string info = thisName + "." + thisSurName + "." + thisDepartament + "." + thisPozita + "." + thisPaga;
-                                info = encrypt(info,key,iv);
-                                byte[] data1 = Encoding.Default.GetBytes(info);
+
+                                var payload = new Dictionary<string, object>
+                                {
+                                    { "name", thisName },
+                                    { "surname", thisSurName },
+                                    { "department", thisDepartament },
+                                    { "pozita", thisPozita },
+                                    { "paga", thisPaga },
+
+                                };
+
+                                IJwtAlgorithm algorithm = new HMACSHA256Algorithm();
+                                IJsonSerializer serializer = new JsonNetSerializer();
+                                IBase64UrlEncoder urlEncoder = new JwtBase64UrlEncoder();
+                                IJwtEncoder encoder = new JwtEncoder(algorithm, serializer, urlEncoder);
+
+                                var token = encoder.Encode(payload,certifikata.PrivateKey.ToString());
+                                byte[] data1 = Encoding.Default.GetBytes(token);
                                 accept.Send(data1, 0, data1.Length, 0);
                             }
                             else
                             {
-                                byte[] data1 = Encoding.Default.GetBytes("wrong");
-                                accept.Send(data1, 0, data1.Length, 0);
+                                string errorMsg = "error";
+                                errorMsg = encrypt(errorMsg, key, iv);
+                                byte[] byteErrorMsg = Encoding.Default.GetBytes(errorMsg);
+                                accept.Send(byteErrorMsg, 0, byteErrorMsg.Length, 0);
 
                             }
                         }
@@ -167,8 +186,8 @@ namespace Serveri
             cs.Read(byteTextiDekriptuar, 0, byteTextiDekriptuar.Length);
             cs.Close();
 
-            string palidhje = Encoding.UTF8.GetString(byteTextiDekriptuar);
-            return palidhje;
+            string decryptedText = Encoding.UTF8.GetString(byteTextiDekriptuar);
+            return decryptedText;
         }
 
         private void PerzgjedhCertifikatenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -196,6 +215,9 @@ namespace Serveri
             {
 
             }
+
+            byte[] byteCert = certifikata.Export(X509ContentType.Cert, "Visar123");
+            accept.Send(byteCert, 0, byteCert.Length, 0);
                        
         }
     }

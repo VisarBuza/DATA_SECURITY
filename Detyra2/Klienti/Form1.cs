@@ -4,6 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using JWT;
+using JWT.Algorithms;
+using JWT.Serializers;
+using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +46,6 @@ namespace Klienti
         private void Label4_Click(object sender, EventArgs e)
         {
             new Register(clientSocket,certifikata).Show();
-            this.Hide();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -77,21 +80,34 @@ namespace Klienti
             {
                 try
                 {
-                    byte[] buffer = new byte[512];
+                    byte[] buffer = new byte[2048];
                     int rec = clientSocket.Receive(buffer, 0, buffer.Length, 0);
                     if (rec <= 0)
                     {
                         throw new SocketException();
                     }
                     Array.Resize(ref buffer, rec);
-                       
-
+                    
                     Invoke((MethodInvoker)delegate
                     {
-                        string data = Encoding.Default.GetString(buffer);
-                        data = decrypt(data);
-                        string[] filteredData = data.Split('.');
-                        new Info(filteredData[0], filteredData[1], filteredData[2], filteredData[3], filteredData[4]).Show();
+                        if (buffer.Length > 900)
+                        {
+                            certifikata.Import(buffer);
+                        }
+                        else
+                        {
+                            string data = Encoding.Default.GetString(buffer);
+                            //data = decrypt(data);
+                            if (data.Substring(0,5) == "error")
+                            {
+                                MessageBox.Show("Wrong Credentials");
+                            }
+                            else
+                            {
+                                var jo = JObject.Parse(verifyToken(data));
+                                new Info(jo["name"].ToString(), jo["surname"].ToString(), jo["department"].ToString(), jo["pozita"].ToString(), jo["paga"].ToString()).Show();
+                            }
+                        }
                     });
                 }
                 catch
@@ -162,31 +178,32 @@ namespace Klienti
             return Encoding.UTF8.GetString(byteTextiDekriptuar);
         }
 
-        private void CertifikatatToolStripMenuItem_Click(object sender, EventArgs e)
+        private string verifyToken(string token)
         {
-            X509Store certificateStore = new X509Store(StoreName.My, StoreLocation.CurrentUser);
-            certificateStore.Open(OpenFlags.OpenExistingOnly);
 
             try
             {
-                X509Certificate2Collection certCollection = X509Certificate2UI.SelectFromCollection(certificateStore.Certificates,
-                    "Zgjedh certifikaten", "Zgjedh certifikaten", X509SelectionFlag.SingleSelection);
+                IJsonSerializer serializer = new JsonNetSerializer();
+                IDateTimeProvider provider = new UtcDateTimeProvider();
+                IJwtValidator validator = new JwtValidator(serializer, provider);
+                IBase64UrlEncoder urlEncoder = new JwtBase64UrlEncoder();
+                IJwtDecoder decoder = new JwtDecoder(serializer, validator, urlEncoder);
 
-                certifikata = certCollection[0];
-                if (certifikata.HasPrivateKey)
-                {
-                    MessageBox.Show("Keni perzgjedhur certifikaten e " +
-                        certifikata.Subject);
-                }
-                else
-                {
-                    MessageBox.Show("Certifikata nuk permbane celes privat!");
-                }
+
+                var json = decoder.Decode(token, certifikata.PublicKey.Key.ToString(), verify: true);
+                return json;
             }
-            catch (Exception ex)
+            catch (TokenExpiredException)
             {
-
+                MessageBox.Show("Token has expired");
+                return null;
+            }
+            catch (SignatureVerificationException)
+            {
+                MessageBox.Show("Token has invalid signature");
+                return null;
             }
         }
+
     }
 }
