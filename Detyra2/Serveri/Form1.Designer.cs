@@ -40,7 +40,7 @@
             // 
             this.btnListen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(83)))), ((int)(((byte)(120)))));
             this.btnListen.ForeColor = System.Drawing.Color.White;
-            this.btnListen.Location = new System.Drawing.Point(38, 22);
+            this.btnListen.Location = new System.Drawing.Point(38, 41);
             this.btnListen.Margin = new System.Windows.Forms.Padding(2);
             this.btnListen.Name = "btnListen";
             this.btnListen.Size = new System.Drawing.Size(220, 32);

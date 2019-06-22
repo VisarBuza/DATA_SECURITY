@@ -131,4 +131,16 @@
     <paga>1200</paga>
     <departamenti>Shoqror</departamenti>
   </punetori>
+  <punetori id="12">
+    <name>Nderim</name>
+    <surname>Gerqari</surname>
+    <username>nderimgerqari</username>
+    <password>
+      <salt>571283</salt>
+      <saltedHash>NNxk8q+q3u5hu9XsEQWvD4lrhI8=</saltedHash>
+    </password>
+    <pozita>Admin</pozita>
+    <paga>900</paga>
+    <departamenti>Elekto</departamenti>
+  </punetori>
 </punetoret>

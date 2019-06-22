@@ -118,7 +118,7 @@ namespace Serveri
                             else
                             {
                                 string errorMsg = "error";
-                                errorMsg = encrypt(errorMsg, key, iv);
+                                //errorMsg = encrypt(errorMsg, key, iv);
                                 byte[] byteErrorMsg = Encoding.Default.GetBytes(errorMsg);
                                 accept.Send(byteErrorMsg, 0, byteErrorMsg.Length, 0);
 
